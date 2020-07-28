@@ -1,0 +1,84 @@
+<html> 
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href = "./resources/css/main.css" type = "text/css" rel = "stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat;
+      }
+    </style>
+    <title>Michael McChesney</title> 
+  </head>
+
+  <body> 
+    <div class = "main">
+      <nav>
+        <div class = "nav-links">
+          <ul>
+            <li id = "home"><a href = "#">Home</a></li>
+            <li id = "about"><a href = "#">About</a></li>
+            <li id = "contact"><a href = "#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class = "information">
+        <div id = "circle">
+          <div class = "feature one">
+            <h1>Hi,<br>
+              I'm Mike,<br>
+              Web Developer
+            </h1>
+            <h3>Front-End Web Developer / Designer</h3>
+          </div>
+          <div class = "feature two">
+            <h2>Education
+            </h2>
+            <p>I am currently a freshman at UCF living just outside of Fort Lauderdale FL, <br>
+            taking online classes to major in electrical engineering</p>
+            <h2>Skill Set
+            </h2>
+            <p>I am proficient in HTML, CSS, and Javascript</p>
+          </div>
+          <div class = "feature three">
+            <h2>Email
+            </h2>
+            <p>miamimike1000@gmail.com</p>
+            <h2>Phone</h2>
+            <p>786-999-4536</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      var circle = document.getElementById("circle");
+      var home = document.getElementById("home");
+      var about = document.getElementById("about");
+      var contact = document.getElementById("contact");
+
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+
+      home.onclick = function(){
+        rotateSum = "rotate(0deg)";
+        circle.style.transform = "rotate(0deg)";
+        rotateValue = rotateSum;
+      }
+      about.onclick = function(){
+        rotateSum = "rotate(120deg)";
+        circle.style.transform = "rotate(120deg)";
+        rotateValue = rotateSum;
+      }
+      contact.onclick = function(){
+        rotateSum = "rotate(240deg)";
+        circle.style.transform = "rotate(240deg)";
+        rotateValue = rotateSum;
+      }
+
+    </script>
+
+  </body>
+</html>
